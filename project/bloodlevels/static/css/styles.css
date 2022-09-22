@@ -1,0 +1,51 @@
+* {
+    margin: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #181818;
+    background: #e7c6ff;
+    text-align: center;
+}
+
+.header {
+    padding-top: 60px;
+    background-image: url("images/odber_krve.jpg");
+    background-size: cover;
+    height: 800px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -500px auto;
+}
+
+h1 {
+    color: white;
+    padding: 100px 0px;
+    text-shadow: 0 0 20px black;
+    font-size: 10em;
+}
+
+h3 {
+    color: white;
+    padding: 15px 0;
+    text-shadow: 0 0 5px black;
+    font-size: 1.2em;
+
+}
+
+table {
+    background: #ffd6ff;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+}
+
+.warning {
+    color: red;
+}

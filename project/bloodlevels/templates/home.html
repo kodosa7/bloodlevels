@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block mycontent %}
+    <div class="header">
+        <h1>Krevní hladiny</h1>
+    </div>
+
+    <div class="wrapper">
+        {% for date in dates %}
+        <h3>Výdsledky pro datum: {{ date }}</h3>
+        
+        <table>
+            <tr>
+                <td align="left">Název</td>
+                <td>Hodnota</td>
+                    <td>Jednotka</td>
+                    <td>Tolerance</td>
+                </tr>
+                {% for level in levels %}
+                <tr>
+                    {% if level.date_id_id == date.id %}
+                        <td align="left"><b>{{ level.name }}</b></td>
+                        {% if level.tolerance != '-' %}
+                            <td class="warning" align="right"><b>{{ level.value }}</b></td>
+                        {% else %}
+                            <td align="right"><b>{{ level.value }}</b></td>
+                        {% endif %}
+                        <td align="right">{{ level.unit }}</td>
+                        <td align="center">{{ level.tolerance }}</td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </table>
+        {% endfor %}
+    </div>
+{% endblock %} 
