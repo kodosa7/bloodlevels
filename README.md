@@ -32,3 +32,6 @@ You can use a DB Browser for SQ Lite to browse the db contents.
 Add/remove/replace records in the Django admin interface.
 If a Tolerance field contains other chracter than '-', the level value
 is highlighted by red color.
+
+## screenshot
+![image](https://user-images.githubusercontent.com/57393100/191699938-3ec6bd34-ad1f-4750-8f18-7a3af00109e8.png)
